@@ -32,7 +32,7 @@ const getImages = (query) => {
   fetch(`https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`)
     .then(response => response.json())
     .then(data => {
-      console.log(data.hits);
+      console.log(data.hits)
       showImages(data.hits)
     })
     .catch(err => console.log(err))
